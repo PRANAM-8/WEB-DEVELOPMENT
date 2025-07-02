@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 60px; /*That means the header stays on top of the screen while scrolling —  */
+   /*and it overlaps other content. Is used to push the rest of the page content down, so it doesn’t get hidden under the fixed header.*/
+     background-image: url('./download.jpeg'); 
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  /* background-color:white; */
+  color:black;
+  }
+
+header {
+  position: fixed;/*even when u scroll down it will remain as it is*/
+  top: 0; 
+  
+  width: 100%;
+  /* color: red; */
+  background-color:black;
+  padding: 15px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* transition: background 0.3s, box-shadow 0.3s;  */
+  z-index: 1000;
+} 
+.welcome{
+  position: absolute; /*/* 👈 take it out of flex flow */
+  color: aliceblue;
+  font-weight: bold;
+  /* left:20px; */
+  left: 10px; /* 👈 stick it to left */
+  /* text-align: left; */
+
+
+}
+
+ #header.scrolled {
+  background: red;
+   color:green; 
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+ nav{
+  left:20px;
+  /* justify-content: space-around; */
+} 
+ nav a {
+   margin: 0 30px;
+  text-decoration: none;
+  color: white;
+  /* border: solid 5px orange; */
+  
+  font-weight: bold;
+} 
+
+  nav a:hover {
+  color: #007bff;
+}  
+
+section {
+   height: 400px; 
+  padding:15px; 
+  margin: 5px;
+  /* background-image: url(./natural\ medicine.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  
+  /* border:solid 5px black; */
+}
+/* #home{
+  background-color:yellow;
+}
+#about{
+  background-color: bisque;
+}
+#services{
+  background-color: rgb(205, 255, 253);
+}
+#contact{
+  background-color: lightpink;
+}  */
+
