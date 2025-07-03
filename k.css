@@ -1,0 +1,176 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /* color: #fff; */
+  background: url('./natural medicine.png') center/cover no-repeat fixed;
+}
+
+header {
+  background-color: rgba(162, 65, 65, 0.484);
+   padding: 20px 40px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+    position:absolute;
+    left:20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+section {
+  padding: 60px 20px;
+  background-color: papayawhip;
+  text-align: center;
+}
+
+#home {
+  height: 100vh;
+   display: flex; 
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+ #home .overlay {
+    /* display: flex; */
+   background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px; 
+  border-radius: 12px; 
+} 
+
+ h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+p, li {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 800px;
+    margin:  auto; 
+   text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  margin-right: 6px; 
+  /* color: #ffd700; */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px; 
+  padding: 10px 20px;
+  background: #ffd700;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.cta-button:hover {
+  background: red;
+}
+
+form {
+   max-width: 600px; 
+  margin:auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+form button {
+  background: #ffd700;
+  color: #000;
+  padding: 10px;
+  /* border: none; */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #e6c200;
+}
+
+footer {
+    
+   text-align: center; 
+  padding: 20px; 
+  background: rgba(0, 0, 0, 0.6);
+  color: #ccc;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  text-decoration: underline;
+}
+/* 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}
+  */
